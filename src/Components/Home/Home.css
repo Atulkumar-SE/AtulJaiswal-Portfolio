@@ -1,0 +1,120 @@
+.homeContainer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--hero_bg);
+
+}
+
+.homeContainer p{
+    font-size: 2rem;
+    font-weight:lighter;
+    color: var(--black);
+}
+.hiText .Hand{
+    rotate: -25deg;
+    animation: hand 1s 4s linear  infinite alternate-reverse;
+}
+@keyframes hand {
+    0%{
+        rotate:0deg ;
+    }
+    100%{
+        rotate: -50deg;
+    }
+}
+.changingText{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.changingText .normarFont{
+    color: var(--black);
+    
+}
+.changingText .typewriterFont{
+    color: #008080;
+}
+.homeContainer .userIcon{
+    font-size: 10rem;
+    color: #008080;
+}
+.homeContainer .socialIcons{
+    display: flex;
+   
+    gap: 1rem;
+}
+.homeContainer .socialIcons span{
+    width: 4rem;
+    height: 4rem;
+     color: #008080;
+      background-color: var(--white);
+    border-radius: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 9px 7px rgba(0, 0, 0, 0.323);
+    cursor: pointer;
+}
+.homeContainer .socialIcons span:hover{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: #faab36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, -10%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+    background-color: #008080;
+    transition: all .15s ease-in;
+}
+
+@media (max-width:600px) {
+    .homeContainer{
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: #f6f6f6;
+    
+    }
+    .homeContainer p{
+        font-size: 1.5rem;
+        font-weight:lighter;
+    }
+    .homeContainer .userIcon{
+        font-size: 12rem;
+       
+    }
+    .homeContainer .socialIcons{
+        gap: .5rem;
+        display: flex;
+    }
+    .homeContainer .socialIcons span{
+        width: 2.5rem;
+        height: 2.5rem;
+         color: #008080;
+          background-color: #ffffff;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.323);
+    }
+    .homeContainer .socialIcons span:hover{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        color: #faab36;
+        transform: translate(0, -6%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+    }
+}

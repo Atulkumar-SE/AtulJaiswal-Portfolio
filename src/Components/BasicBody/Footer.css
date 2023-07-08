@@ -1,0 +1,247 @@
+.F_container{
+    width: 100%;
+    /* height: 100vh; */
+    color: #fff;
+    padding: 3rem 1rem;
+    background-color: #2b2a2a;
+}
+.F_container .quote {
+    text-align: center;
+}
+.F_container .quote p{
+   font-size: 1.2rem;
+    font-weight: 100;
+}
+.F_container span{
+    font-size: 2.5rem;
+    
+    align-items:center ;
+    text-align: center;
+}
+.form_container{
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+   display: flex;
+    /* background-color: rgb(255, 191, 127); */
+}
+.form_container .F_image{
+    width: 50%;
+   position: relative;
+}
+.F_image .Emoji{
+width: 100%;
+transform: translate(0%, -10%);
+}
+.F_image .menlaptop{
+    width: 20vw;
+    position: absolute;
+    transform: translate(-140%, -14%);
+    animation: MoveUpDown 1.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%,100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+  }
+.Form{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+.Form h1{
+ text-decoration: underline solid #faab36;
+ margin-bottom: 2rem;
+}
+.Form form{
+    width: 60%;
+    /* background-color: violet; */
+}
+.Form form div{
+    /* width: 70%; */
+   
+   margin-bottom: 1rem;
+}
+.Form form div input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: .5rem;
+    text-transform: capitalize;
+    border: 0;
+    color: #fff;
+    outline: none;
+    background-color: #2b2a2a;
+    border-bottom: 3px solid #faab36;
+}
+.Form form div textarea{
+    width: 100%;
+    height: 5rem;
+    resize: none;
+    font-size: 1rem;
+    padding-left: .5rem;
+    text-transform: capitalize;
+    border: 0;
+    color: #fff;
+    outline: none;
+    background-color: #2b2a2a;
+    border-bottom: 3px solid #faab36;
+}
+.Form form div textarea:hover{
+    border: 0;
+    transition: all .3s ease-in;
+    box-shadow:0px 0px 10px 1px #faab36 ;
+}
+.Form form div input:hover{
+    border: 0;
+    transition: all .3s ease-in;
+    box-shadow:0px 0px 10px 1px #faab36 ;
+}
+.Form form button{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 2rem;
+    background-color: #faab36;
+    cursor: pointer;
+}
+.Form form button:hover{
+ border-bottom: 2px solid #fff;
+    background-color: #ff9900;
+}
+.F_container .socialIcon{
+   
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.F_container .socialIcon span{
+    width: 3rem;
+    height: 3rem;
+     color: #008080;
+      background-color: #2b2a2a;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 9px 7px rgba(0, 0, 0, 0.323);
+    cursor: pointer;
+}
+.F_container .socialIcon span:hover{
+   
+  
+    color: #ff9900;
+   
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+    background-color: #008080;
+    transition: all .15s ease-in;
+}
+/* --------------------Mobile responsive-------------------- */
+@media (max-width:1000px) {
+    .F_container{
+        height: auto;
+        padding: 2rem 2.5rem;
+    }
+    .form_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 5rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items:center;
+       gap: 2rem;
+    }
+  
+    .form_container .F_image{
+        width: 70%;
+    }
+    .F_image .Emoji{
+    width: 100%;
+    }
+    .F_image .menlaptop{
+        width: 60%;
+        transform: translate(-140%, -14%);
+    }
+    
+    @keyframes MoveUpDown {
+        0%,100% {
+          bottom: 0;
+        }
+        50% {
+          bottom: 15px;
+        }
+      }
+    .Form{
+        width: 100%;
+        gap: 4rem;
+    }
+    .Form h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .Form form{
+        width: 25rem;
+    }
+    .Form form div{       
+       margin-bottom: 1rem;
+    }
+    .Form form div input:hover{
+        border: 0;
+        transition: all .3s ease-in;
+        box-shadow:0px 0px 10px 1px #faab36 ;
+    }
+    
+    .Form form button:hover{
+    
+        background-color: #ff9900;
+    }
+    .F_container .socialIcon{
+       
+        margin: auto;
+        display: flex;
+        gap: 1rem;
+        margin: 4rem 0 1rem 0;
+        justify-content: center;
+    }
+   
+ 
+}
+@media (max-width:600px) {
+    .form_container .F_image{
+        width: 100%;
+    }
+    
+    
+    .Form{
+        width: 100%;
+        gap: 4rem;
+
+    }
+    .Form h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .Form form{
+        width: 100%;
+        /* background-color: #008080; */
+
+    }
+}
