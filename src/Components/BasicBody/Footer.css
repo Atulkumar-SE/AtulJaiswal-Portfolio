@@ -59,7 +59,8 @@ transform: translate(0%, -10%);
     /* background-color: aqua; */
 }
 .Form h1{
- text-decoration: underline solid #faab36;
+    border-bottom: 4px solid #673DE6;
+
  margin-bottom: 2rem;
 }
 .Form form{
@@ -81,7 +82,7 @@ transform: translate(0%, -10%);
     color: #fff;
     outline: none;
     background-color: #2b2a2a;
-    border-bottom: 3px solid #faab36;
+    border-bottom: 3px solid #673DE6;
 }
 .Form form div textarea{
     width: 100%;
@@ -94,17 +95,17 @@ transform: translate(0%, -10%);
     color: #fff;
     outline: none;
     background-color: #2b2a2a;
-    border-bottom: 3px solid #faab36;
+    border-bottom: 3px solid #673DE6;
 }
 .Form form div textarea:hover{
     border: 0;
     transition: all .3s ease-in;
-    box-shadow:0px 0px 10px 1px #faab36 ;
+    box-shadow:0px 0px 10px 1px #673DE6 ;
 }
 .Form form div input:hover{
     border: 0;
     transition: all .3s ease-in;
-    box-shadow:0px 0px 10px 1px #faab36 ;
+    box-shadow:0px 0px 10px 1px #673DE6 ;
 }
 .Form form button{
     width: 100%;
@@ -115,12 +116,12 @@ transform: translate(0%, -10%);
     border: 0;
     border-radius: 50px;
     margin-top: 2rem;
-    background-color: #faab36;
+    background-color: #673DE6;
     cursor: pointer;
 }
 .Form form button:hover{
  border-bottom: 2px solid #fff;
-    background-color: #ff9900;
+    background-color: #673DE6;
 }
 .F_container .socialIcon{
    
@@ -133,7 +134,7 @@ transform: translate(0%, -10%);
 .F_container .socialIcon span{
     width: 3rem;
     height: 3rem;
-     color: #008080;
+     color: #673DE6;
       background-color: #2b2a2a;
     border-radius: 50px;
     font-size: 1.5rem;
@@ -206,7 +207,7 @@ transform: translate(0%, -10%);
     .Form form div input:hover{
         border: 0;
         transition: all .3s ease-in;
-        box-shadow:0px 0px 10px 1px #faab36 ;
+        box-shadow:0px 0px 10px 1px #673DE6 ;
     }
     
     .Form form button:hover{

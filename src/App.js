@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,BrowserRouter as Router, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home/Home'
 import Experience from './Components/Experience/Experience'
@@ -10,11 +10,14 @@ import Project from './Components/Projects/Project'
 import Header from './Components/BasicBody/Header'
 import Footer from './Components/BasicBody/Footer'
 import BottomUp from './Components/BasicBody/BottomUp'
+import NotFound from './Components/BasicBody/NotFound'
 
 
 const App = () => {
+const isLocalDevelopment = window.location.hostname === 'localhost';
+const basename = isLocalDevelopment ? '' : '/AtulJaiswal-Portfolio';
   return (
-    <Router>
+    <Router basename={basename}>
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -23,6 +26,8 @@ const App = () => {
         <Route path='/education' element={<Education/>} />
         <Route path='/project' element={<Project/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path="/404" element={<NotFound />} />
+  <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
       <BottomUp/>
     <Footer/>
