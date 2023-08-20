@@ -18,11 +18,14 @@ const Footer = () => {
           grow.
         </p>
       </div>
+      {/* ---------------Image animation-------------------- */}
       <div className="form_container">
         <div className="F_image">
          <img src={emoji} className="Emoji" alt="emoji" />
          <img src={menlaptop} className="menlaptop" alt="menlaptop" />
         </div>
+              {/* ---------------Contact Form-------------------- */}
+
         <div className="Form">
           <h1>Get in Touch</h1>
           <form action="">
@@ -56,6 +59,8 @@ const Footer = () => {
           </form>
         </div>
       </div>
+            {/* ---------------Social media-------------------- */}
+
       <div className="socialIcon">
         <span>
           <FaLinkedinIn />

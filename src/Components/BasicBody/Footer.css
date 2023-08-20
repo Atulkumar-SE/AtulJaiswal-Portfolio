@@ -6,8 +6,12 @@
     background-color: #2b2a2a;
 }
 .F_container .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
+
 .F_container .quote p{
    font-size: 1.2rem;
     font-weight: 100;
@@ -19,24 +23,26 @@
     text-align: center;
 }
 .form_container{
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 5rem;
-   display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
     /* background-color: rgb(255, 191, 127); */
 }
 .form_container .F_image{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-color: rgb(253, 34, 253); */
    position: relative;
 }
-.F_image .Emoji{
-width: 100%;
-transform: translate(0%, -10%);
-}
+
 .F_image .menlaptop{
-    width: 20vw;
+    width: 70%;
     position: absolute;
-    transform: translate(-140%, -14%);
+    
     animation: MoveUpDown 1.5s linear infinite;
 }
 
@@ -49,7 +55,7 @@ transform: translate(0%, -10%);
     }
   }
 .Form{
-    width: 50%;
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -59,7 +65,7 @@ transform: translate(0%, -10%);
     /* background-color: aqua; */
 }
 .Form h1{
-    border-bottom: 4px solid #673DE6;
+    border-bottom: 4px solid #622AFF;
 
  margin-bottom: 2rem;
 }
@@ -82,7 +88,7 @@ transform: translate(0%, -10%);
     color: #fff;
     outline: none;
     background-color: #2b2a2a;
-    border-bottom: 3px solid #673DE6;
+    border-bottom: 3px solid #622AFF;
 }
 .Form form div textarea{
     width: 100%;
@@ -95,17 +101,17 @@ transform: translate(0%, -10%);
     color: #fff;
     outline: none;
     background-color: #2b2a2a;
-    border-bottom: 3px solid #673DE6;
+    border-bottom: 3px solid #622AFF;
 }
 .Form form div textarea:hover{
     border: 0;
     transition: all .3s ease-in;
-    box-shadow:0px 0px 10px 1px #673DE6 ;
+    box-shadow:0px 0px 10px 1px #622AFF ;
 }
 .Form form div input:hover{
     border: 0;
     transition: all .3s ease-in;
-    box-shadow:0px 0px 10px 1px #673DE6 ;
+    box-shadow:0px 0px 10px 1px #622AFF ;
 }
 .Form form button{
     width: 100%;
@@ -116,12 +122,12 @@ transform: translate(0%, -10%);
     border: 0;
     border-radius: 50px;
     margin-top: 2rem;
-    background-color: #673DE6;
+    background-color: #622AFF;
     cursor: pointer;
 }
 .Form form button:hover{
  border-bottom: 2px solid #fff;
-    background-color: #673DE6;
+    background-color: #622AFF;
 }
 .F_container .socialIcon{
    
@@ -134,7 +140,7 @@ transform: translate(0%, -10%);
 .F_container .socialIcon span{
     width: 3rem;
     height: 3rem;
-     color: #673DE6;
+     color: #622AFF;
       background-color: #2b2a2a;
     border-radius: 50px;
     font-size: 1.5rem;
@@ -151,7 +157,7 @@ transform: translate(0%, -10%);
    
     
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
-    background-color: #008080;
+    background-color: #622AFF;
     transition: all .15s ease-in;
 }
 /* --------------------Mobile responsive-------------------- */
@@ -171,20 +177,12 @@ transform: translate(0%, -10%);
        gap: 2rem;
     }
   
-    .form_container .F_image{
-        width: 70%;
-    }
-    .F_image .Emoji{
-    width: 100%;
-    }
-    .F_image .menlaptop{
-        width: 60%;
-        transform: translate(-140%, -14%);
-    }
+
+  
     
     @keyframes MoveUpDown {
         0%,100% {
-          bottom: 0;
+          bottom:   0;
         }
         50% {
           bottom: 15px;
@@ -207,12 +205,12 @@ transform: translate(0%, -10%);
     .Form form div input:hover{
         border: 0;
         transition: all .3s ease-in;
-        box-shadow:0px 0px 10px 1px #673DE6 ;
+        box-shadow:0px 0px 10px 1px #622AFF ;
     }
     
     .Form form button:hover{
     
-        background-color: #ff9900;
+        background-color: #622AFF;
     }
     .F_container .socialIcon{
        
@@ -226,9 +224,7 @@ transform: translate(0%, -10%);
  
 }
 @media (max-width:600px) {
-    .form_container .F_image{
-        width: 100%;
-    }
+    
     
     
     .Form{
@@ -242,7 +238,7 @@ transform: translate(0%, -10%);
     }
     .Form form{
         width: 100%;
-        /* background-color: #008080; */
+        /* background-color: #622AFF; */
 
     }
 }

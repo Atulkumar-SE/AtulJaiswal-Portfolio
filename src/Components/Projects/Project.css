@@ -1,0 +1,26 @@
+
+.ProfileCard{
+    perspective: 1000px;
+    width: 20rem;
+    height: 25rem;
+    background-color: plum;
+}
+.ProfileCard :hover{
+    transform: rotateY(180deg);
+}
+.profileCard_Inner{
+   
+   transition:transform 2s;
+   transform-style: preserve-3d;
+    background-color: bisque;
+}
+.profileCard_front{
+   
+    background-color: yellowgreen;
+}
+
+.profileCard_back{
+    background-color: cyan;
+    transform: rotateY(180deg);
+
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home/Home'
 import Experience from './Components/Experience/Experience'
@@ -27,7 +27,7 @@ const basename = isLocalDevelopment ? '' : '/AtulJaiswal-Portfolio';
         <Route path='/project' element={<Project/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path="/404" element={<NotFound />} />
-  <Route path="*" element={<Navigate to="/404" replace />} />
+  {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
       </Routes>
       <BottomUp/>
     <Footer/>

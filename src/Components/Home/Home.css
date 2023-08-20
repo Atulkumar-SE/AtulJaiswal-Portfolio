@@ -1,120 +1,295 @@
-.homeContainer{
+.homeContainer {
+  width: 100%;
+  /* height: 90vh; */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: var(--hero_bg);
+}
+.Hleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6%;
+}
+.Hleft p {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.8rem;
+}
+.homeContainer p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--black);
+}
+.Name {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.Hleft .Hand {
+  rotate: -25deg;
+  animation: hand 1s 4s linear infinite alternate-reverse;
+}
+
+.changingText {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem 0;
+}
+.changingText .normarFont {
+  color: var(--black);
+}
+.changingText .typewriterFont {
+  color: #622aff;
+}
+.About_Para {
+  float: left;
+}
+.About_Para p {
+  padding-right: 25%;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.About_Para button {
+  width: 10rem;
+  height: 3rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #622aff;
+  border-radius: 50px;
+  border: 3px solid #622aff;
+  background-color: #ffffff00;
+}
+.About_Para button:hover {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  background-color: #622aff;
+}
+
+.homeContainer .socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+.homeContainer .socialIcons span {
+  width: 4rem;
+  height: 4rem;
+  color: #622aff;
+  background-color: var(--white);
+  border-radius: 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 9px 9px 7px rgba(0, 0, 0, 0.323);
+  cursor: pointer;
+}
+.homeContainer .socialIcons span:hover {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  color: #f8cd53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -10%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+  background-color: #622aff;
+  transition: all 0.15s ease-in;
+}
+.Hright {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.Hright .ImgContainer {
+  width: 30rem;
+  position: relative;
+}
+.Hright .ImgContainer img {
+  width: 85%;
+  top: 0%;
+  left: 8%;
+  border-radius: 0 0 80px 80px;
+  position: absolute;
+}
+
+.design1 {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 200px;
+  overflow: hidden;
+  background-color: #f8cd53;
+  box-shadow: 0px 0px 100px 0px #f8cd53;
+}
+@keyframes hand {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -50deg;
+  }
+}
+@media (max-width: 1200px) {
+  .homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Hleft {
+    display: flex;
+    padding-left: 6%;
+  }
+
+  .Name {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+ 
+
+  
+
+  .changingText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+  }
+  
+  .About_Para p {
+    padding-right: 15%;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .homeContainer .socialIcons {
+    gap: 0.5rem;
+    display: flex;
+  }
+  .homeContainer .socialIcons span {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background-color: var(--white);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.323);
+  }
+  .homeContainer .socialIcons span:hover {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: #faab36;
+    transform: translate(0, -6%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+  }
+
+  .Hright {
+    display: flex;
+    justify-content: center;
+  }
+  .Hright .ImgContainer {
+    width: 15rem;
+    position: relative;
+  }
+  .Hright .ImgContainer img {
     width: 100%;
-    height: 90vh;
+    top: 12%;
+    left: 16%;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+  }
+
+  .design1 {
+    width: 20rem;
+    height: 10rem;
+    box-shadow: 0px 0px 50px 0px #f8cd53;
+  }
+}
+
+@media (max-width: 750px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .Hleft {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    background-color: var(--hero_bg);
+    padding: 0;
+    text-align: center;
+  }
 
-}
-
-.homeContainer p{
+  .Name {
     font-size: 2rem;
-    font-weight:lighter;
-    color: var(--black);
-}
-.hiText .Hand{
-    rotate: -25deg;
-    animation: hand 1s 4s linear  infinite alternate-reverse;
-}
-@keyframes hand {
-    0%{
-        rotate:0deg ;
-    }
-    100%{
-        rotate: -50deg;
-    }
-}
-.changingText{
-    font-size: 4rem;
+    font-weight: 600;
+  }
+ 
+
+ 
+  .homeContainer p {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+
+  .changingText {
+    font-size: 1.4rem;
     font-weight: 700;
-}
-.changingText .normarFont{
-    color: var(--black);
-    
-}
-.changingText .typewriterFont{
-    color: #DB76FA;
-}
-.homeContainer .userIcon{
-    font-size: 10rem;
-    color: #008080;
-}
-.homeContainer .socialIcons{
-    display: flex;
-   
-    gap: 1rem;
-}
-.homeContainer .socialIcons span{
-    width: 4rem;
-    height: 4rem;
-     color: #008080;
-      background-color: var(--white);
-    border-radius: 50px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 9px 9px 7px rgba(0, 0, 0, 0.323);
-    cursor: pointer;
-}
-.homeContainer .socialIcons span:hover{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    font-size: 2rem;
-    color: #faab36;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, -10%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
-    background-color: #008080;
-    transition: all .15s ease-in;
-}
+  }
 
-@media (max-width:600px) {
-    .homeContainer{
-        width: 100%;
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        background-color: #f6f6f6;
+  .homeContainer .socialIcons {
+    gap: 0.5rem;
+    display: flex;
+  }
+  .homeContainer .socialIcons span {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background-color: var(--white);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.323);
+  }
+  .homeContainer .socialIcons span:hover {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: #faab36;
+    transform: translate(0, -6%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
+  }
+  .Hright {
+    display: flex;
+    justify-content: center;
+  }
+  .About_Para p {
+    padding-right: 0;
+    font-size: 1rem;
+    font-weight: 100;
     
-    }
-    .homeContainer p{
-        font-size: 1.5rem;
-        font-weight:lighter;
-    }
-    .homeContainer .userIcon{
-        font-size: 12rem;
-       
-    }
-    .homeContainer .socialIcons{
-        gap: .5rem;
-        display: flex;
-    }
-    .homeContainer .socialIcons span{
-        width: 2.5rem;
-        height: 2.5rem;
-         color: #008080;
-          background-color: #ffffff;
-        border-radius: 50px;
-        font-size: 1.2rem;
-        box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.323);
-    }
-    .homeContainer .socialIcons span:hover{
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50px;
-        font-size: 1.2rem;
-        color: #faab36;
-        transform: translate(0, -6%);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.323);
-    }
+  }
+  .Hright .ImgContainer {
+    width: 15rem;
+    position: relative;
+  }
+  .Hright .ImgContainer img {
+    width: 85%;
+    top: 0%;
+    left: 8%;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+  }
+
+  .design1 {
+    width: 15rem;
+    height: 7.5rem;
+    border-radius: 200px;
+    overflow: hidden;
+    background-color: #f8cd53;
+    box-shadow: 0px 0px 100px 0px #f8cd53;
+  }
 }
