@@ -5,9 +5,9 @@ import WorkExperience from "../../ReusableComponent/WorkExperienceCard/WorkExper
 
 const Experience = () => {
   return (
-    <div className="w-[90%]  m-auto flex flex-col gap-1">
+    <div className="w-[90%] text-[color:var(--black)]  m-auto flex flex-col gap-1">
       {/* -----------------------Experience Hero ------------------------- */}
-      <div className="flex flex-col-reverse sm:flex-row h-[90vh] sm:h-[80vh]  justify-center items-center">
+      <div className="flex flex-col-reverse sm:flex-row  h-[90vh] sm:h-[80vh]  justify-center items-center">
         <div className="w-[100%] sm:w-[50%] ">
           <img src={experinceHero} alt="hero" className="w-[100%] " />
         </div>
@@ -22,10 +22,10 @@ const Experience = () => {
       </div>
       {/* -----------------------Work Experience------------------------- */}
       <div className="flex flex-col items-center">
-        <h1 className="text-[2rem] font-semibold">
+        <h1 className="text-[2.5rem] font-semibold">
           Work <span className="text-[#622AFF]">Experience</span>
         </h1>
-        <div className="py-10">
+        <div className="py-20">
           <WorkExperience />
         </div>
       </div>

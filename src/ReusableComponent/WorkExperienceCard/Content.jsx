@@ -1,4 +1,6 @@
-import lintas from "../../Images/logoBlue.png";
+import lintas from "../../Images/Lintaslogo.png";
+import Kube from "../../Images/Kubelogo.png";
+import taging from "../../Images/taginglogo.png";
 
 const ExperienceData = [
   {
@@ -23,7 +25,7 @@ const ExperienceData = [
       "Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.",
       "Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.",
     ],
-    brandlogo: lintas,
+    brandlogo: Kube,
   },
   {
     id: 3,
@@ -35,7 +37,7 @@ const ExperienceData = [
       "Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.",
       "Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.",
     ],
-    brandlogo: lintas,
+    brandlogo: taging,
   },
 ];
 export default ExperienceData;

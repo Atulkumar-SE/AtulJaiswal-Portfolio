@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import logo from '../../Images/logoBlue.png'
-// import logoo from '../../Images/logo33.svg'
-// import logoos from '../../Images/logo44.svg'
+import logo from '../../Images/logo.png'
 import cycling from '../../Images/cycling.gif'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import DarkModeToggle from './DarkModeToggle'
