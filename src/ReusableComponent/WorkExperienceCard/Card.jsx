@@ -28,16 +28,16 @@ export function Card(props) {
           <h5 className="text-[1.5rem]">{props.company}</h5>
           <h6 className="text-[.9rem]">{props.duration}</h6>
 
-          <div>
+          <ul>
             {props.responsibility.map((list, index) => (
-              <div key={index} className="flex text-[1.1rem]">
-                <div className="text-[1.5rem] font-extrabold ">
+              <div key={index} className="flex text-[1.2rem]">
+                {/* <div className="text-[1.5rem] font-extrabold ">
                   <li></li>
-                </div>
-                {list}
+                </div> */}
+               <li type="1" > {list}</li>
               </div>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
       </div>
