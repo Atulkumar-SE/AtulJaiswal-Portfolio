@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AtulJaiswal-Portfolio/static/css/main.a763640b.css",
-    "main.js": "/AtulJaiswal-Portfolio/static/js/main.a3acad06.js",
+    "main.css": "/AtulJaiswal-Portfolio/static/css/main.748f6e9f.css",
+    "main.js": "/AtulJaiswal-Portfolio/static/js/main.18511f7c.js",
     "static/media/atul imgage.png": "/AtulJaiswal-Portfolio/static/media/atul imgage.d81d625e5ccecf5ca6f9.png",
     "static/media/experinceHero.png": "/AtulJaiswal-Portfolio/static/media/experinceHero.d32a82286b83f89f3cc3.png",
     "static/media/cycling.gif": "/AtulJaiswal-Portfolio/static/media/cycling.2a04cb84a31be29a98cd.gif",
@@ -12,11 +12,11 @@
     "static/media/taginglogo.png": "/AtulJaiswal-Portfolio/static/media/taginglogo.a709fc730872b4f1f8e8.png",
     "static/media/logo.png": "/AtulJaiswal-Portfolio/static/media/logo.7bb7cd200305a2f8bee2.png",
     "index.html": "/AtulJaiswal-Portfolio/index.html",
-    "main.a763640b.css.map": "/AtulJaiswal-Portfolio/static/css/main.a763640b.css.map",
-    "main.a3acad06.js.map": "/AtulJaiswal-Portfolio/static/js/main.a3acad06.js.map"
+    "main.748f6e9f.css.map": "/AtulJaiswal-Portfolio/static/css/main.748f6e9f.css.map",
+    "main.18511f7c.js.map": "/AtulJaiswal-Portfolio/static/js/main.18511f7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a763640b.css",
-    "static/js/main.a3acad06.js"
+    "static/css/main.748f6e9f.css",
+    "static/js/main.18511f7c.js"
   ]
 }
